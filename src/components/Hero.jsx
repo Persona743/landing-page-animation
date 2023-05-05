@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import LineImg from '/assets/img/line.png';
 import MoonImg from '/assets/img/moon.png';
 import Navbar from './Navbar';
+import { Sphere, OrbitControls, MeshDistortMaterial } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
 
 const Section = styled.div`
     height: 100vh;
@@ -104,7 +106,19 @@ export default function Hero() {
                     <Button>Learn More</Button>
                 </Left>
                 <Right>
-                    {/* 3d model */}
+                    <Canvas>
+                        <OrbitControls enableZoom={false} />
+                        <ambientLight intensity={0.5} />
+                        <directionalLight position={[3, 2, 1]} />
+                        <Sphere args={[1, 100, 200]} scale={2.6}>
+                            <MeshDistortMaterial
+                                color="#2c065d"
+                                attach="material"
+                                distort={0.5}
+                                speed={2}
+                            />
+                        </Sphere>
+                    </Canvas>
                     <Img src={MoonImg} />
                 </Right>
             </Container>
