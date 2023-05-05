@@ -88,7 +88,7 @@ const Img = styled.img`
 
 export default function Hero() {
     return (
-        <Section>
+        <Section id="#">
             <Navbar />
             <Container>
                 <Left>

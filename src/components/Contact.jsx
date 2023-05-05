@@ -90,7 +90,7 @@ export default function Contact() {
     };
 
     return (
-        <Section>
+        <Section id="contact">
             <Container>
                 <Left>
                     <Form ref={form} onSubmit={sendEmail}>

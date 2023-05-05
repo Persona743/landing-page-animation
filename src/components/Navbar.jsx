@@ -34,6 +34,11 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     cursor: pointer;
+    a {
+        text-decoration: none;
+        background: transparent;
+        color: white;
+    }
 `;
 
 const Icons = styled.div`
@@ -64,10 +69,18 @@ export default function Navbar() {
                 <Links>
                     <Logo src={LogoImg} />
                     <List>
-                        <ListItem>Home</ListItem>
-                        <ListItem>Studio</ListItem>
-                        <ListItem>Works</ListItem>
-                        <ListItem>Contact</ListItem>
+                        <ListItem>
+                            <a href="#">Home</a>
+                        </ListItem>
+                        <ListItem>
+                            <a href="#studio">Studio</a>
+                        </ListItem>
+                        <ListItem>
+                            <a href="#works">Works</a>
+                        </ListItem>
+                        <ListItem>
+                            <a href="#contact">Contact</a>
+                        </ListItem>
                     </List>
                 </Links>
                 <Icons>

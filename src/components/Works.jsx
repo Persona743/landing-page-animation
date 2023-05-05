@@ -73,7 +73,7 @@ const Right = styled.div`
 
 export default function Works() {
     return (
-        <Section>
+        <Section id="works">
             <Container>
                 <Left>
                     <List>

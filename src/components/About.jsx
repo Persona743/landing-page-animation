@@ -64,7 +64,7 @@ const Button = styled.button`
 
 export default function About() {
     return (
-        <Section>
+        <Section id="studio">
             <Container>
                 <Left>{/* 3d model */}</Left>
                 <Right>
