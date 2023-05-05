@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/about';
 import Works from './components/works';
 import Contact from './components/Contact';
+import Test from './components/Test';
 
 import styled from 'styled-components';
 
@@ -26,6 +27,7 @@ export default function App() {
             <About />
             <Works />
             <Contact />
+            <Test />
         </Container>
     );
 }
