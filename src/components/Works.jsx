@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import WebDesign from './WebDesign';
 import Development from './Development';
 import ProductDesign from './ProductDesign';
+import ContentCreation from './ContentCreation';
+import SocialMedia from './SocialMedia';
 
 const data = [
     'Web Design',
@@ -98,8 +100,12 @@ export default function Works() {
                         <WebDesign />
                     ) : work === 'Development' ? (
                         <Development />
-                    ) : (
+                    ) : work === 'Content Creation' ? (
+                        <ContentCreation />
+                    ) : work === 'Product Design' ? (
                         <ProductDesign />
+                    ) : (
+                        <SocialMedia />
                     )}
                 </Right>
             </Container>
