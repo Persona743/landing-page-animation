@@ -14,7 +14,7 @@ export default function Model(props) {
     const { nodes, materials } = useGLTF('/controller-transformed.glb');
     return (
         <group {...props} dispose={null}>
-            <group position={[0, 13.49, -13.98]} rotation={[-0.56, 0, 0]}>
+            <group position={[0, 13.49, -13.98]} rotation={[-6.06, -6.5, -6.3]}>
                 <group rotation={[Math.PI / 2, 0, 0]}>
                     <group
                         position={[-0.06, 18.35, 5.65]}

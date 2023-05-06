@@ -3,13 +3,32 @@ import { Canvas } from '@react-three/fiber';
 
 import Development3d from './Development3d';
 
+import styled from 'styled-components';
+
+const Desc = styled.div`
+    width: 200px;
+    height: 145px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+`;
+
 export default function Development() {
     return (
-        <Canvas>
-            <Stage environment={'city'} intensity={0.6}>
-                <Development3d />
-            </Stage>
-            <OrbitControls enableZoom={false} />
-        </Canvas>
+        <>
+            <Canvas>
+                <Stage environment={'city'} intensity={0.6}>
+                    <Development3d />
+                </Stage>
+                <OrbitControls enableZoom={false} />
+            </Canvas>
+            <Desc>
+                Working with the team of best devs to provide our client the
+                smooth, fast and easy user experience.
+            </Desc>
+        </>
     );
 }
